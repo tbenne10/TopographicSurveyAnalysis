@@ -1,7 +1,7 @@
 # TopographicSurveyAnalysis
 CNN classification for scoring topographic images to measure spatial awareness
 
-This repo is designed to provide an example of how to implement a custom topographic survey setup that scores submitted responses using a convolutional neural network. Updated code and information is pending. 
+This repo is designed to provide an example of how to implement a custom topographic survey setup that scores submitted responses using a convolutional neural network. Updated code and information is pending. The assessment page was combined into a single page to give a visual of the entire survey. 
 
 These scripts will not work by default without configuration, specifically in choosing directories to operate on. Only run_participants.py contains a GUI to allow directory selection. This is because the other files are intended to be run in an IDE (preferably Spyder) with adjustments made as needed. Additionally, run_participants.py will rely on the structure of the CSV file that it is made to run. 
 
