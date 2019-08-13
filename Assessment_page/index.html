@@ -1,0 +1,991 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 20px;
+        padding: 0px;
+      }
+      #p1{
+        padding-right: 900px;
+      }
+      #p2{
+        padding-right: 400px;
+      }
+      #fourchoice{
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+      
+    </style>
+  </head>
+  <body bgcolor="gainsboro">
+  
+  
+<h1> Topography Assessment </h1>
+<br>
+<p  id = "p1" align = "justify">
+    This assessment will test your topography skills. Please enter your first and last name. 
+    Answer every question asked to the best of your knowledge. Some questions will ask you  
+    to draw a route you would take. Use your mouse as a pen, and if you mess up, click "clear" 
+    below the image. <br><b>Important: Look through to make sure all the images have loaded. If they 
+     are not, refresh the page.</b><br><br>
+</p>
+<form name="form" action="transfer.php" method="POST">
+<input type="hidden" value="URL1" name="URL1" id="URL1" />
+<input type="hidden" value="URL2" name="URL2" id="URL2" />
+<input type="hidden" value="URL3" name="URL3" id="URL3" />
+<input type="hidden" value="URL4" name="URL4" id="URL4" />
+<input type="hidden" value="URL7" name="URL7" id="URL7" />
+<input type="hidden" value="URL8" name="URL8" id="URL8" />
+<input type="hidden" value="URL9" name="URL9" id="URL9" />
+<input type="hidden" value="URL17" name="URL17" id="URL17" />
+<input type="hidden" value="URL18" name="URL18" id="URL18" />
+
+
+
+Enter your first name: <br>
+<input type="text" name="firstname"><br><br>
+Enter your last name: <br>
+<input type="text" name="lastname"><br><br><br> 
+<h3>Question 1:</h3>
+<p>Imagine you see the view from the left picture. Circle the arrow on the map that indicates where and which direction
+   you think you are facing. </p>
+
+
+<div id="paint1">
+  <img id="q1_1" src="q1_1.png" width="500" height="500" border="1">
+  <canvas id="Canvas1" style="border:1px solid #000000;"></canvas>
+  <input type="button" id="clear1" value="Clear">
+</div>
+
+<br>
+<h3>Question 2:</h3>
+<p  id = "p2" align = "justify">You are standing at the square, but you want to get to a place (on the map) where you would be able to see a small 
+  lake at the circle. Assume there is no vegetation.  Please draw a line from the square to another place on the map 
+  that indicates the route you would take to a spot where you can see the circle. Explain below, why you chose the spot 
+  as well as the route to get there:</p>
+
+  <div id="paint2">
+      <canvas id="Canvas2" style="border:1px solid #000000;"></canvas>
+      <input type="button" id="clear2" value="Clear">
+    </div>
+<br>
+Enter your answer here: <input type="text" name="q2_written" size = "75"><br><br>
+<br>
+
+<h3>Question 3:</h3>
+<p>Imagine you see the view from the left picture. Circle the arrow on the map that indicates where and which direction
+   you think you are facing. </p>
+
+
+<div id="paint3">
+  <img id="q3_1" src="q3_1.png" width="500" height="350" border="1">
+  <canvas id="Canvas3" style="border:1px solid #000000;"></canvas>
+  <input type="button" id="clear3" value="Clear">
+</div>
+
+<br>
+
+<h3>Question 4:</h3>
+<p>Imagine you see the view from the left picture. Circle the arrow on the map that indicates where and which direction
+   you think you are facing. </p>
+
+<div id="paint4">
+  <img id="q4_1" src="q4_1.png" width="500" height="350" border="1">
+  <canvas id="Canvas4" style="border:1px solid #000000;"></canvas>
+  <input type="button" id="clear4" value="Clear">
+</div>
+
+<br>
+<h3>Question 5:</h3>
+<p>Which elevation profile matches the cross-section of the line AB?</p>
+<br>
+<div id="fourchoice">
+ <img id="q5_1" src="q5_1.png" width="500" height="350" border="1"><br><br>
+ <img id="q5_2" src="q5_2.png" width="300" height="150" border="1">
+ <input type="radio" name="q5_radio" value="A">A.  
+ <img id="q5_3" src="q5_3.png" width="300" height="150" border="1" style="margin-left:60px;">
+ <input type="radio" name="q5_radio" value="B">B.  <br><br>
+ <img id="q5_4" src="q5_4.png" width="300" height="150" border="1">
+ <input type="radio" name="q5_radio" value="C">C.  
+ <img id="q5_5" src="q5_5.png" width="300" height="150" border="1" style="margin-left:60px;">
+ <input type="radio" name="q5_radio" value="D">D.  <br>
+</div>
+
+<br>
+<h3>Question 6:</h3>
+<p>Which elevation profile matches the cross-section of the line AB?</p>
+<br>
+<div id="fourchoice">
+ <img id="q6_1" src="q6_1.png" width="500" height="350" border="1"><br><br>
+ <img id="q6_2" src="q6_2.png" width="300" height="150" border="1">
+ <input type="radio" name="q6_radio" value="A">A.  
+ <img id="q6_3" src="q6_3.png" width="300" height="150" border="1" style="margin-left:60px;">
+ <input type="radio" name="q6_radio" value="B">B.  <br><br>
+ <img id="q6_4" src="q6_4.png" width="300" height="150" border="1">
+ <input type="radio" name="q6_radio" value="C">C.  
+ <img id="q6_5" src="q6_5.png" width="300" height="150" border="1" style="margin-left:60px;">
+ <input type="radio" name="q6_radio" value="D">D.  <br>
+</div>
+
+<br><br>
+<h3>Question 7:</h3>
+<p  id = "p2" align = "justify">Imagine there is a stream that connects the circle and the square.  
+  Please draw the path you believe the stream would follow.  
+  In addition, clearly mark the direction you believe the water would flow, then explain why below.</p>
+
+  <div id="paint7">
+      <canvas id="Canvas7" style="border:1px solid #000000;"></canvas>
+      <input type="button" id="clear7" value="Clear">
+    </div>
+<br>
+Enter your answer here: <input type="text" name="q7_written" size = "75"><br><br>
+<br>
+
+<br>
+<h3>Question 8:</h3>
+<p  id = "p2" align = "justify">Imagine there is a stream that connects the circle and the square.  
+  Please draw the path you believe the stream would follow.  
+  In addition, clearly mark the direction you believe the water would flow, then explain why below.
+  Finally, do you think the water would flow faster near the circle, or near the square?  Why?
+</p>
+
+  <div id="paint8">
+      <canvas id="Canvas8" style="border:1px solid #000000;"></canvas>
+      <input type="button" id="clear8" value="Clear">
+    </div>
+<br>
+Enter your answer here: <input type="text" name="q8_written" size = "75"><br><br>
+<br>
+
+<br>
+<h3>Question 9:</h3>
+<p  id = "p2" align = "justify">Imagine there is a stream that connects the circle and the square.  
+  Please draw the path you believe the stream would follow.  
+  In addition, clearly mark the direction you believe the water would flow, then explain why below.
+</p>
+
+  <div id="paint9">
+      <canvas id="Canvas9" style="border:1px solid #000000;"></canvas>
+      <input type="button" id="clear9" value="Clear">
+    </div>
+<br>
+Enter your answer here: <input type="text" name="q9_written" size = "75"><br><br>
+<br>
+
+<br>
+<h3>Question 10:</h3>
+<p>Imagine Josh traveled on foot from point A to point B, and Amy traveled on foot from point C to point D.  </p>
+
+<img id="q10_1" src="q10_1.png" width="500" height="350" border="1"><br><br>
+Who walked up a steeper slope?  How can you tell? <input type="text" name="q10_written1" size = "75"><br><br>
+Who traveled a greater vertical distance?  How can you tell? <input type="text" name="q10_written2" size = "75"><br><br>
+<br>
+
+<br>
+<h3>Question 11:</h3>
+<p id = "p2" align = "justify">Which of the following views best represents what someone would see 
+  standing at the start of the arrow and facing in that direction?</p>
+<br>
+<div id="fourchoice">
+ <img id="q11_1" src="q11_1.png" width="500" height="350" border="1"><br><br>
+ <img id="q11_2" src="q11_2.png" width="300" height="150" border="1">
+ <input type="radio" name="q11_radio" value="A">A.  
+ <img id="q11_3" src="q11_3.png" width="300" height="150" border="1" style="margin-left:60px;">
+ <input type="radio" name="q11_radio" value="B">B.  <br><br>
+ <img id="q11_4" src="q11_4.png" width="300" height="150" border="1">
+ <input type="radio" name="q11_radio" value="C">C.  
+ <img id="q11_5" src="q11_5.png" width="300" height="150" border="1" style="margin-left:60px;">
+ <input type="radio" name="q11_radio" value="D">D.  <br>
+</div>
+
+
+<br>
+<br>
+<h3>Question 12:</h3>
+<p>Which hill is higher: A or B?  </p>
+
+<img id="q12_1" src="q12_1.png" width="500" height="350" border="1"><br><br>
+<input type="radio" name="q12_radio" value="D" >A. 
+<input type="radio" name="q12_radio" value="D" style="margin-left:60px;">B.  <br>
+<br>
+
+
+<br>
+<h3>Question 13:</h3>
+<p id = "p2" align = "justify">What is the contour interval on this map?  That is, how much does elevation change moving from one line to another? </p>
+
+<img id="q13_1" src="q13_1.png" width="500" height="350" border="1"><br><br>
+Enter your answer here: <input type="text" name="q13_written" size = "15"><br><br>
+<br>
+
+
+<br>
+<h3>Question 14:</h3>
+<p id = "p2" align = "justify">Imagine Josh traveled on foot from point A to point B, and Amy traveled on 
+  foot from point C to point D.</p>
+
+<img id="q14_1" src="q14_1.png" width="500" height="350" border="1"><br><br>
+Who walked up a steeper slope? <input type="text" name="q14_written1" size = "15"><br><br>
+Why did you choose the answer you did? <input type="text" name="q14_written2" size = "75"><br><br>
+<br>
+
+
+<br>
+<h3>Question 15:</h3>
+<p id = "p2" align = "justify">The contour interval for this map is 40 feet.</p>
+
+<img id="q15_1" src="q15_1.png" width="500" height="350" border="1"><br><br>
+What is the elevation at point A?<input type="text" name="q15_written" size = "15"><br><br>
+<br>
+
+
+
+<br>
+<h3>Question 16:</h3>
+<p id = "p2" align = "justify">The contour interval on this map is 20 feet.  One person is standing at each point on the map. 
+   Please answer (Y/N)  the following questions about whether the people standing at two points can see each other. 
+    Assume they are able to use binoculars. Also assume there is no vegetation. 
+  </p>
+<br>
+<img id="q16_1" src="q16_1.png" width="500" height="350" border="1"><br><br>
+<div id="fourchoice">
+ A and B: <input type="radio" name="q16_radio1" value="yes" style="margin-left:20px;">Yes  
+ <input type="radio" name="q16_radio1" value="no" style="margin-left:40px;">No <br> 
+ A and D: <input type="radio" name="q16_radio2" value="yes" style="margin-left:20px;">Yes  
+ <input type="radio" name="q16_radio2" value="no" style="margin-left:40px;">No <br> 
+ B and C: <input type="radio" name="q16_radio3" value="yes" style="margin-left:20px;">Yes  
+ <input type="radio" name="q16_radio3" value="no" style="margin-left:40px;">No <br> 
+ C and D: <input type="radio" name="q16_radio4" value="yes" style="margin-left:20px;">Yes  
+ <input type="radio" name="q16_radio4" value="no" style="margin-left:40px;">No <br> 
+ B and D: <input type="radio" name="q16_radio5" value="yes" style="margin-left:20px;">Yes  
+ <input type="radio" name="q16_radio5" value="no" style="margin-left:40px;">No <br> 
+</div>
+
+
+<br>
+<h3>Question 17:</h3>
+<p id = "p2" align = "justify">Imagine there is a stream that connects
+   the circle and the square.  In which direction would the water flow?  
+   Why? Please draw the path the stream would take.
+  </p>
+<br>
+<div id="paint17">
+    <canvas id="Canvas17" style="border:1px solid #000000;"></canvas>
+    <input type="button" id="clear17" value="Clear">
+  </div>
+<br>
+Enter your answer here: <input type="text" name="q17_written" size = "75"><br><br>
+<br>
+
+<br>
+<h3>Question 18:</h3>
+<p id = "p2" align = "justify">The contour interval for this map is 100 ft.  
+    Imagine you had to walk to get from point A to point B, 
+    and wanted to do so as easily as possible.  Sketch the route you would build, 
+    and explain why you chose that particular path.
+    
+  </p>
+<br>
+<div id="paint18">
+    <canvas id="Canvas18" style="border:1px solid #000000;"></canvas>
+    <input type="button" id="clear18" value="Clear">
+  </div>
+<br>
+Enter your answer here: <input type="text" name="q18_written" size = "75"><br><br>
+<br>
+
+
+
+
+<br>
+Click submit to complete this assignment<br><br>
+<button type="submit" value="Submit" id="b1" name="b1">Submit</button>
+<br><br><br><br><br>
+<br>
+
+  <span id="URL1" name="URL1"></span>
+  <span id="URL2" name="URL2"></span>
+  <span id="URL3" name="URL3"></span>
+  <span id="URL4" name="URL4"></span>
+  <span id="URL7" name="URL7"></span>
+  <span id="URL8" name="URL8"></span>
+  <span id="URL9" name="URL9"></span>
+  <span id="URL17" name="URL17"></span>
+  <span id="URL18" name="URL18"></span>
+  <div style="display:none;">
+    <img id="q1_2" src="q1_2.png" width="1" height="1">
+    <img id="q2_1" src="q2_1.png" width="1" height="1">
+    <img id="q3_2" src="q3_2.png" width="1" height="1">
+    <img id="q4_2" src="q4_2.png" width="1" height="1">
+    <img id="q7_1" src="q7_1.png" width="1" height="1">
+    <img id="q8_1" src="q8_1.png" width="1" height="1">
+    <img id="q9_1" src="q9_1.png" width="1" height="1">
+    <img id="q17_1" src="q17_1.png" width="1" height="1">
+    <img id="q18_1" src="q18_1.png" width="1" height="1">
+  </div>
+
+
+</form>
+
+
+<script>
+    var canvas1 = document.getElementById('Canvas1');
+    var ctx1 = canvas1.getContext('2d');
+    
+    var painting = document.getElementById('paint1');
+    var paint_style = getComputedStyle(painting);
+    canvas1.width = 500;
+    canvas1.height = 500;
+  
+    var image1 = document.getElementById('q1_2');
+    ctx1.drawImage(image1, 0, 0, 500, 500);
+    
+    var dataURL1 = canvas1.toDataURL();
+    
+    var mouse1 = {x: 0, y: 0};
+    
+    var background = new Image();
+        background.src = "q1_2.png";
+
+
+        background.onload = function(){
+            ctx1.drawImage(background,0,0, 500,500);   
+        }
+     
+    canvas1.addEventListener('mousemove', function(e) {
+      mouse1.x = e.pageX - this.offsetLeft;
+      mouse1.y = e.pageY - this.offsetTop;
+    }, false);
+    
+    ctx1.lineWidth = 3;
+    ctx1.lineJoin = 'round';
+    ctx1.lineCap = 'round';
+    ctx1.strokeStyle = '#00CC99';
+     
+    canvas1.addEventListener('mousedown', function(e) {
+        ctx1.beginPath();
+        ctx1.moveTo(mouse1.x, mouse1.y);
+     
+        canvas1.addEventListener('mousemove', onPaint1, false);
+    }, false);
+     
+    canvas1.addEventListener('mouseup', function() {
+        canvas1.removeEventListener('mousemove', onPaint1, false);
+        dataURL1 = canvas1.toDataURL(); 
+         document.getElementById("URL1").value = dataURL1;
+    }, false);
+    
+    canvas1.addEventListener('mouseleave', function() {
+        canvas1.removeEventListener('mousemove', onPaint1, false);
+        dataURL1 = canvas1.toDataURL(); 
+        document.getElementById("URL1").value = dataURL1;
+    }, false);
+    
+    document.getElementById('clear1').addEventListener('click', function() {
+            ctx1.clearRect(0, 0, canvas1.width, canvas1.height);
+            var image1 = document.getElementById('q1_2');
+            ctx1.drawImage(image1, 0, 0, 500, 500);
+            }, false);
+    
+    document.getElementById('b1').addEventListener('click', function() {
+             dataURL1 = canvas1.toDataURL(); 
+              document.getElementById("URL1").value = dataURL1;
+            }, false);
+     
+    var onPaint1 = function() {
+        ctx1.lineTo(mouse1.x, mouse1.y);
+        ctx1.stroke();
+    };
+    
+  
+    
+</script>
+
+
+
+<script>
+  var canvas2 = document.getElementById('Canvas2');
+  var ctx2 = canvas2.getContext('2d');
+  
+  var painting = document.getElementById('paint2');
+  var paint_style = getComputedStyle(painting);
+  canvas2.width = 600;
+  canvas2.height = 350;
+
+  var image2 = document.getElementById('q2_1');
+  ctx2.drawImage(image2, 0, 0, 600, 350);
+  
+  var dataURL2 = canvas2.toDataURL();
+  
+  var mouse2 = {x: 0, y: 0};
+  
+   var background2 = new Image();
+        background2.src = "q2_1.png";
+
+
+        background2.onload = function(){
+            ctx2.drawImage(background2,0,0, 600, 350);   
+        }
+   
+  canvas2.addEventListener('mousemove', function(e) {
+    mouse2.x = e.pageX - this.offsetLeft;
+    mouse2.y = e.pageY - this.offsetTop;
+  }, false);
+  
+  ctx2.lineWidth = 3;
+  ctx2.lineJoin = 'round';
+  ctx2.lineCap = 'round';
+  ctx2.strokeStyle = '#00CC99';
+   
+  canvas2.addEventListener('mousedown', function(e) {
+      ctx2.beginPath();
+      ctx2.moveTo(mouse2.x, mouse2.y);
+   
+      canvas2.addEventListener('mousemove', onPaint2, false);
+  }, false);
+   
+  canvas2.addEventListener('mouseup', function() {
+      canvas2.removeEventListener('mousemove', onPaint2, false);
+      dataURL2 = canvas2.toDataURL(); 
+       document.getElementById("URL2").value = dataURL2;
+  }, false);
+  
+  canvas2.addEventListener('mouseleave', function() {
+      canvas2.removeEventListener('mousemove', onPaint2, false);
+      dataURL2 = canvas2.toDataURL(); 
+      document.getElementById("URL2").value = dataURL2;
+  }, false);
+  
+  document.getElementById('clear2').addEventListener('click', function() {
+          ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+          var image2 = document.getElementById('q2_1');
+          ctx2.drawImage(image2, 0, 0, 600, 350);
+          }, false);
+  
+  document.getElementById('b1').addEventListener('click', function() {
+           dataURL2 = canvas2.toDataURL(); 
+            document.getElementById("URL2").value = dataURL2;
+          }, false);
+   
+  var onPaint2 = function() {
+      ctx2.lineTo(mouse2.x, mouse2.y);
+      ctx2.stroke();
+  };
+  
+</script>
+
+
+
+<script>
+  var canvas3 = document.getElementById('Canvas3');
+  var ctx3 = canvas3.getContext('2d');
+  
+  var painting3 = document.getElementById('paint3');
+  var paint_style3 = getComputedStyle(painting3);
+  canvas3.width = 600;
+  canvas3.height = 350;
+
+  var image3 = document.getElementById('q3_2');
+  ctx3.drawImage(image3, 0, 0, 600, 350);
+  
+  var dataURL3 = canvas3.toDataURL();
+  
+  var mouse3 = {x: 0, y: 0};
+   
+  var background3 = new Image();
+        background3.src = "q3_2.png";
+
+
+        background3.onload = function(){
+            ctx3.drawImage(background3,0,0, 600, 350);   
+        }
+
+  canvas3.addEventListener('mousemove', function(e) {
+    mouse3.x = e.pageX - this.offsetLeft;
+    mouse3.y = e.pageY - this.offsetTop;
+  }, false);
+  
+  ctx3.lineWidth = 3;
+  ctx3.lineJoin = 'round';
+  ctx3.lineCap = 'round';
+  ctx3.strokeStyle = '#00CC99';
+   
+  canvas3.addEventListener('mousedown', function(e) {
+      ctx3.beginPath();
+      ctx3.moveTo(mouse3.x, mouse3.y);
+   
+      canvas3.addEventListener('mousemove', onPaint3, false);
+  }, false);
+   
+  canvas3.addEventListener('mouseup', function() {
+      canvas3.removeEventListener('mousemove', onPaint3, false);
+      dataURL3 = canvas3.toDataURL(); 
+       document.getElementById("URL3").value = dataURL3;
+  }, false);
+  
+  canvas3.addEventListener('mouseleave', function() {
+      canvas3.removeEventListener('mousemove', onPaint3, false);
+      dataURL3 = canvas3.toDataURL(); 
+      document.getElementById("URL3").value = dataURL3;
+  }, false);
+  
+  document.getElementById('clear3').addEventListener('click', function() {
+          ctx3.clearRect(0, 0, canvas3.width, canvas3.height);
+          var image3 = document.getElementById('q3_2');
+          ctx3.drawImage(image3, 0, 0, 600, 350);
+          }, false);
+  
+  document.getElementById('b1').addEventListener('click', function() {
+           dataURL3 = canvas3.toDataURL(); 
+            document.getElementById("URL3").value = dataURL3;
+          }, false);
+   
+  var onPaint3 = function() {
+      ctx3.lineTo(mouse3.x, mouse3.y);
+      ctx3.stroke();
+  };
+  
+  </script>
+
+
+<script>
+  var canvas4 = document.getElementById('Canvas4');
+  var ctx4 = canvas4.getContext('2d');
+  
+  var painting4 = document.getElementById('paint4');
+  var paint_style4 = getComputedStyle(painting4);
+  canvas4.width = 600;
+  canvas4.height = 350;
+
+  var image4 = document.getElementById('q4_2');
+  ctx4.drawImage(image4, 0, 0, 600, 350);
+  
+  var dataURL4 = canvas4.toDataURL();
+  
+  var mouse4 = {x: 0, y: 0};
+
+  var background4 = new Image();
+        background4.src = "q4_2.png";
+
+
+        background4.onload = function(){
+            ctx4.drawImage(background4,0,0, 600, 350);   
+        }
+   
+  canvas4.addEventListener('mousemove', function(e) {
+    mouse4.x = e.pageX - this.offsetLeft;
+    mouse4.y = e.pageY - this.offsetTop;
+  }, false);
+  
+  ctx4.lineWidth = 3;
+  ctx4.lineJoin = 'round';
+  ctx4.lineCap = 'round';
+  ctx4.strokeStyle = '#00CC99';
+   
+  canvas4.addEventListener('mousedown', function(e) {
+      ctx4.beginPath();
+      ctx4.moveTo(mouse4.x, mouse4.y);
+   
+      canvas4.addEventListener('mousemove', onPaint4, false);
+  }, false);
+   
+  canvas4.addEventListener('mouseup', function() {
+      canvas4.removeEventListener('mousemove', onPaint4, false);
+      dataURL4 = canvas4.toDataURL(); 
+       document.getElementById("URL4").value = dataURL4;
+  }, false);
+  
+  canvas4.addEventListener('mouseleave', function() {
+      canvas4.removeEventListener('mousemove', onPaint4, false);
+      dataURL4 = canvas4.toDataURL(); 
+      document.getElementById("URL4").value = dataURL4;
+  }, false);
+  
+  document.getElementById('clear4').addEventListener('click', function() {
+          ctx4.clearRect(0, 0, canvas4.width, canvas4.height);
+          var image4 = document.getElementById('q4_2');
+          ctx4.drawImage(image4, 0, 0, 600, 350);
+          }, false);
+  
+  document.getElementById('b1').addEventListener('click', function() {
+           dataURL4 = canvas4.toDataURL(); 
+            document.getElementById("URL4").value = dataURL4;
+          }, false);
+   
+  var onPaint4 = function() {
+      ctx4.lineTo(mouse4.x, mouse4.y);
+      ctx4.stroke();
+  };
+  
+  </script>
+
+<script>
+    var canvas7 = document.getElementById('Canvas7');
+    var ctx7 = canvas7.getContext('2d');
+    
+    var painting7 = document.getElementById('paint7');
+    var paint_style7 = getComputedStyle(painting7);
+    canvas7.width = 250;
+    canvas7.height = 450;
+  
+    var image7 = document.getElementById('q7_1');
+    ctx7.drawImage(image7, 0, 0, 250, 450);
+    
+    var dataURL7 = canvas7.toDataURL();
+    
+    var mouse7 = {x: 0, y: 0};
+
+    var background7 = new Image();
+        background7.src = "q7_1.png";
+
+
+        background7.onload = function(){
+            ctx7.drawImage(background7,0,0, 250, 450);   
+        }
+
+
+    canvas7.addEventListener('mousemove', function(e) {
+      mouse7.x = e.pageX - this.offsetLeft;
+      mouse7.y = e.pageY - this.offsetTop;
+    }, false);
+    
+    ctx7.lineWidth = 3;
+    ctx7.lineJoin = 'round';
+    ctx7.lineCap = 'round';
+    ctx7.strokeStyle = '#00CC99';
+     
+    canvas7.addEventListener('mousedown', function(e) {
+        ctx7.beginPath();
+        ctx7.moveTo(mouse7.x, mouse7.y);
+     
+        canvas7.addEventListener('mousemove', onPaint7, false);
+    }, false);
+     
+    canvas7.addEventListener('mouseup', function() {
+        canvas7.removeEventListener('mousemove', onPaint7, false);
+        dataURL7 = canvas7.toDataURL(); 
+         document.getElementById("URL7").value = dataURL7;
+    }, false);
+    
+    canvas7.addEventListener('mouseleave', function() {
+        canvas7.removeEventListener('mousemove', onPaint7, false);
+        dataURL7 = canvas7.toDataURL(); 
+        document.getElementById("URL7").value = dataURL7;
+    }, false);
+    
+    document.getElementById('clear7').addEventListener('click', function() {
+            ctx7.clearRect(0, 0, canvas7.width, canvas7.height);
+            var image7 = document.getElementById('q7_1');
+            ctx7.drawImage(image7, 0, 0, 250, 450);
+            }, false);
+    
+    document.getElementById('b1').addEventListener('click', function() {
+             dataURL7 = canvas7.toDataURL(); 
+              document.getElementById("URL7").value = dataURL7;
+            }, false);
+     
+    var onPaint7 = function() {
+        ctx7.lineTo(mouse7.x, mouse7.y);
+        ctx7.stroke();
+    };
+    
+    </script>
+
+
+<script>
+    var canvas8 = document.getElementById('Canvas8');
+    var ctx8 = canvas8.getContext('2d');
+  
+    var painting8 = document.getElementById('paint8');
+    var paint_style8 = getComputedStyle(painting8);
+    canvas8.width = 500;
+    canvas8.height = 500;
+  
+    var image8 = document.getElementById('q8_1');
+    ctx8.drawImage(image8, 0, 0, 500, 500);
+    
+    var dataURL8 = canvas8.toDataURL();
+    
+    var mouse8 = {x: 0, y: 0};
+     
+    var background8 = new Image();
+        background8.src = "q8_1.png";
+
+
+        background8.onload = function(){
+            ctx8.drawImage(background8,0,0, 500, 500);   
+        }
+
+    canvas8.addEventListener('mousemove', function(e) {
+      mouse8.x = e.pageX - this.offsetLeft;
+      mouse8.y = e.pageY - this.offsetTop;
+    }, false);
+    
+    ctx8.lineWidth = 3;
+    ctx8.lineJoin = 'round';
+    ctx8.lineCap = 'round';
+    ctx8.strokeStyle = '#00CC99';
+     
+    canvas8.addEventListener('mousedown', function(e) {
+        ctx8.beginPath();
+        ctx8.moveTo(mouse8.x, mouse8.y);
+     
+        canvas8.addEventListener('mousemove', onPaint8, false);
+    }, false);
+     
+    canvas8.addEventListener('mouseup', function() {
+        canvas8.removeEventListener('mousemove', onPaint8, false);
+        dataURL8 = canvas8.toDataURL(); 
+         document.getElementById("URL8").value = dataURL8;
+    }, false);
+    
+    canvas8.addEventListener('mouseleave', function() {
+        canvas8.removeEventListener('mousemove', onPaint8, false);
+        dataURL8 = canvas8.toDataURL(); 
+        document.getElementById("URL8").value = dataURL8;
+    }, false);
+    
+    document.getElementById('clear8').addEventListener('click', function() {
+            ctx8.clearRect(0, 0, canvas8.width, canvas8.height);
+            var image8 = document.getElementById('q8_1');
+            ctx8.drawImage(image8, 0, 0, 500, 500);
+            }, false);
+    
+    document.getElementById('b1').addEventListener('click', function() {
+             dataURL8 = canvas8.toDataURL(); 
+              document.getElementById("URL8").value = dataURL8;
+            }, false);
+     
+    var onPaint8 = function() {
+        ctx8.lineTo(mouse8.x, mouse8.y);
+        ctx8.stroke();
+    };
+    
+    </script>
+
+
+
+<script>
+    var canvas9 = document.getElementById('Canvas9');
+    var ctx9 = canvas9.getContext('2d');
+  
+    var painting9 = document.getElementById('paint9');
+    var paint_style9 = getComputedStyle(painting9);
+    canvas9.width = 500;
+    canvas9.height = 500;
+  
+    var image9 = document.getElementById('q9_1');
+    ctx9.drawImage(image9, 0, 0, 500, 500);
+    
+    var dataURL9 = canvas9.toDataURL();
+    
+    var mouse9 = {x: 0, y: 0};
+     
+    var background9 = new Image();
+        background9.src = "q9_1.png";
+
+
+        background9.onload = function(){
+            ctx9.drawImage(background9,0,0, 500, 500);   
+        }
+
+    canvas9.addEventListener('mousemove', function(e) {
+      mouse9.x = e.pageX - this.offsetLeft;
+      mouse9.y = e.pageY - this.offsetTop;
+    }, false);
+    
+    ctx9.lineWidth = 3;
+    ctx9.lineJoin = 'round';
+    ctx9.lineCap = 'round';
+    ctx9.strokeStyle = '#00CC99';
+     
+    canvas9.addEventListener('mousedown', function(e) {
+        ctx9.beginPath();
+        ctx9.moveTo(mouse9.x, mouse9.y);
+     
+        canvas9.addEventListener('mousemove', onPaint9, false);
+    }, false);
+     
+    canvas9.addEventListener('mouseup', function() {
+        canvas9.removeEventListener('mousemove', onPaint9, false);
+        dataURL9 = canvas9.toDataURL(); 
+         document.getElementById("URL9").value = dataURL9;
+    }, false);
+    
+    canvas9.addEventListener('mouseleave', function() {
+        canvas9.removeEventListener('mousemove', onPaint9, false);
+        dataURL9 = canvas9.toDataURL(); 
+        document.getElementById("URL9").value = dataURL9;
+    }, false);
+    
+    document.getElementById('clear9').addEventListener('click', function() {
+            ctx9.clearRect(0, 0, canvas9.width, canvas9.height);
+            var image9 = document.getElementById('q9_1');
+            ctx9.drawImage(image9, 0, 0, 500, 500);
+            }, false);
+    
+    document.getElementById('b1').addEventListener('click', function() {
+             dataURL9 = canvas9.toDataURL(); 
+              document.getElementById("URL9").value = dataURL9;
+            }, false);
+     
+    var onPaint9 = function() {
+        ctx9.lineTo(mouse9.x, mouse9.y);
+        ctx9.stroke();
+    };
+    
+    </script>
+
+<script>
+    var canvas17 = document.getElementById('Canvas17');
+    var ctx17 = canvas17.getContext('2d');
+  
+    var painting17 = document.getElementById('paint17');
+    var paint_style17 = getComputedStyle(painting17);
+    canvas17.width = 500;
+    canvas17.height = 500;
+  
+    var image17 = document.getElementById('q17_1');
+    ctx17.drawImage(image17, 0, 0, 500, 500);
+    
+    var dataURL17 = canvas17.toDataURL();
+    
+    var mouse17 = {x: 0, y: 0};
+     
+    var background17 = new Image();
+        background17.src = "q17_1.png";
+
+        background17.onload = function(){
+            ctx17.drawImage(background17,0,0, 500, 500);   
+        }
+    canvas17.addEventListener('mousemove', function(e) {
+      mouse17.x = e.pageX - this.offsetLeft;
+      mouse17.y = e.pageY - this.offsetTop;
+    }, false);
+    
+    ctx17.lineWidth = 3;
+    ctx17.lineJoin = 'round';
+    ctx17.lineCap = 'round';
+    ctx17.strokeStyle = '#00CC99';
+     
+    canvas17.addEventListener('mousedown', function(e) {
+        ctx17.beginPath();
+        ctx17.moveTo(mouse17.x, mouse17.y);
+     
+        canvas17.addEventListener('mousemove', onPaint17, false);
+    }, false);
+     
+    canvas17.addEventListener('mouseup', function() {
+        canvas17.removeEventListener('mousemove', onPaint17, false);
+        dataURL17 = canvas17.toDataURL(); 
+         document.getElementById("URL17").value = dataURL17;
+    }, false);
+    
+    canvas17.addEventListener('mouseleave', function() {
+        canvas17.removeEventListener('mousemove', onPaint17, false);
+        dataURL17 = canvas17.toDataURL(); 
+        document.getElementById("URL17").value = dataURL17;
+    }, false);
+    
+    document.getElementById('clear17').addEventListener('click', function() {
+            ctx17.clearRect(0, 0, canvas17.width, canvas17.height);
+            var image17 = document.getElementById('q17_1');
+            ctx17.drawImage(image17, 0, 0, 500, 500);
+            }, false);
+    
+    document.getElementById('b1').addEventListener('click', function() {
+             dataURL17 = canvas17.toDataURL(); 
+              document.getElementById("URL17").value = dataURL17;
+            }, false);
+     
+    var onPaint17 = function() {
+        ctx17.lineTo(mouse17.x, mouse17.y);
+        ctx17.stroke();
+    };
+    
+    </script>
+
+
+<script>
+    var canvas18 = document.getElementById('Canvas18');
+    var ctx18 = canvas18.getContext('2d');
+  
+    var painting18 = document.getElementById('paint18');
+    var paint_style18 = getComputedStyle(painting18);
+    canvas18.width = 500;
+    canvas18.height = 500;
+  
+    var image18 = document.getElementById('q18_1');
+    ctx18.drawImage(image18, 0, 0, 500, 500);
+    
+    var dataURL18 = canvas18.toDataURL();
+    
+    var mouse18 = {x: 0, y: 0};
+     
+    var background18 = new Image();
+        background18.src = "q18_1.png";
+
+
+        background18.onload = function(){
+            ctx18.drawImage(background18,0,0, 500, 500);   
+        }
+
+    canvas18.addEventListener('mousemove', function(e) {
+      mouse18.x = e.pageX - this.offsetLeft;
+      mouse18.y = e.pageY - this.offsetTop;
+    }, false);
+    
+    ctx18.lineWidth = 3;
+    ctx18.lineJoin = 'round';
+    ctx18.lineCap = 'round';
+    ctx18.strokeStyle = '#00CC99';
+     
+    canvas18.addEventListener('mousedown', function(e) {
+        ctx18.beginPath();
+        ctx18.moveTo(mouse18.x, mouse18.y);
+     
+        canvas18.addEventListener('mousemove', onPaint18, false);
+    }, false);
+     
+    canvas18.addEventListener('mouseup', function() {
+        canvas18.removeEventListener('mousemove', onPaint18, false);
+        dataURL18 = canvas18.toDataURL(); 
+         document.getElementById("URL18").value = dataURL18;
+    }, false);
+    
+    canvas18.addEventListener('mouseleave', function() {
+        canvas18.removeEventListener('mousemove', onPaint18, false);
+        dataURL18 = canvas18.toDataURL(); 
+        document.getElementById("URL18").value = dataURL18;
+    }, false);
+    
+    document.getElementById('clear18').addEventListener('click', function() {
+            ctx18.clearRect(0, 0, canvas18.width, canvas18.height);
+            var image18 = document.getElementById('q18_1');
+            ctx18.drawImage(image18, 0, 0, 500, 500);
+            }, false);
+    
+    document.getElementById('b1').addEventListener('click', function() {
+             dataURL18 = canvas18.toDataURL(); 
+              document.getElementById("URL18").value = dataURL18;
+            }, false);
+     
+    var onPaint18 = function() {
+        ctx18.lineTo(mouse18.x, mouse18.y);
+        ctx18.stroke();
+    };
+    
+    </script>
+
+
+
+</body>
+</html>          
+
+
+
+
+
+
