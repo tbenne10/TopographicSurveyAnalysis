@@ -91,13 +91,14 @@ def labeledData(datapath, files, size):
     return images
 
 
+#!Important	
 #Path to data folder here: 
-data_folder = ""
+data_folder = "C:/Users/MinearLab-Ninja/Desktop/Topo/"
 
 
 ##Begin Creating Models
 for key in Questions:
-    QuestionData = data_folder + key + "/"
+    QuestionData = data_folder + "AllData/" + key + "/"
     all_files = [f for f in os.listdir(QuestionData) if not f.startswith(".")]
 
     sz = Questions[key]
@@ -115,7 +116,7 @@ for key in Questions:
     ##Display photos
     print("Image examples: ")
     for i in range(1, 9):
-        print(train_files[i])
+        print(training_images[i])
         display(_Imgdis(filename=QuestionData + all_files[i], width=240, height=320))
     
  
@@ -164,10 +165,10 @@ for key in Questions:
     #FOR SAVING 
     # serialize model to JSON
     model_json = model.to_json()
-    with open("newModels/" + key + ".json", "w") as json_file:
+    with open(data_folder + "/newModels/" + key + ".json", "w") as json_file:
         json_file.write(model_json)
         ## serialize weights to HDF5
-        model.save_weights("newModels/" + key + ".h5")
+        model.save_weights(data_folder + "newModels/" + key + ".h5")
         print("Saved model to disk")
 
     
