@@ -2,8 +2,8 @@
 <br>
 CNN classification for scoring topographic images to measure spatial awareness
 <br>
-<img src="https://github.com/tbenne10/TopographicSurveyAnalysis/blob/master/Assessment_page/q1_1.png" width="256" height="256">
-<img src="https://github.com/tbenne10/TopographicSurveyAnalysis/blob/master/Assessment_page/q1_2.png" width="256" height="256">
+<img src="https://github.com/tbenne10/TopographicSurveyAnalysis/blob/master/Assessment_page/q1_1.png" width="512" height="400">
+<img src="https://github.com/tbenne10/TopographicSurveyAnalysis/blob/master/Assessment_page/q1_2.png" width="512" height="400">
 <br>
 This repo is designed to provide an example of how to implement a custom topographic survey setup that scores submitted responses using a convolutional neural network. The assessment page in this sample was combined into a single page to give a visual of the entire survey. 
 
