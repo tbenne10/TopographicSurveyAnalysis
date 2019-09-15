@@ -27,7 +27,10 @@ import os.path
 
 
 #Specify max size due to large size of Base64 images
-csv.field_size_limit(sys.maxsize)
+#**~MAC/LINUX~**#
+#csv.field_size_limit(sys.maxsize)
+#**~WINDOWS 64 BIT~**#
+csv.field_size_limit(2**30)
     
 #Specify which questions are drawn images. Their associated value is the 
 #size of the image used in data preprocessing for the machine learning model. 
@@ -93,7 +96,7 @@ def Start():
     
     #Function to process each individual image
     #Returns a prediction score of 1 or 0.
-    def process_image(Qnum, uri):
+    def process_image(Qnum, uri, partid):
         print(f"Processing image: {Qnum}")
         #Ensure value exists
         if(uri == None): return 0
@@ -104,7 +107,11 @@ def Start():
         img = open(path, "wb")
         img.write(base64.b64decode(uri))
         img = cv2.imread(path, 0)
-        img = cv2.resize(img, (size, size))
+        #Test resizing image. If the URI is corrupted, return 'C'. 
+        try:
+            img = cv2.resize(img, (size, size))
+        except: 
+            return 'c'
         img_reshape = np.array(img).reshape(-1,size,size,1)
         #Run image against model
         print("Acc: ")
@@ -134,6 +141,7 @@ def Start():
     line_count = 0
     for row in read_data:
         if row[0].startswith(prefix, 0, len(prefix)):
+            print(row[0])
             if line_count == 0:
                 line_count += 1
                 write_responses.writerow(['Number','Participant', 'Q1_drawn', 'Q2_drawn', 
@@ -170,7 +178,7 @@ def Start():
                 for x in drawn_images: 
                     y = row[drawn_images_list.index(x) + 2].split(',')
                     if(len(y) > 1):
-                        resp.append(process_image(x, y[1]))
+                        resp.append(process_image(x, y[1], row[0]))
                     else: resp.append("N/A")
                     #print(row[drawn_images_list.index(x) + 2])
                 ##Q5
