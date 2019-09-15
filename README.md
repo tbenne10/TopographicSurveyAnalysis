@@ -1,6 +1,7 @@
 # TopographicSurveyAnalysis
 <br>
-CNN classification for scoring topographic images to measure spatial awareness
+<b>CNN classification for scoring topographic images to measure spatial awareness</b>
+<br>
 <br>
 <p align="center">
 <img src="https://github.com/tbenne10/TopographicSurveyAnalysis/blob/master/Assessment_page/q1_1.png" width="256" height="256">
