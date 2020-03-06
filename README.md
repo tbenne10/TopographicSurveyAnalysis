@@ -12,9 +12,9 @@ This repo is designed to provide an example of how to implement a custom topogra
 
 *Please refer to the paper for notes regarding PHP configuration on web hosting providers as some hosts do not allow large transfer sizes by default*. 
 
-These scripts will not work by default without configuration, as directories and models need to be specified for custom datasets. Only run_participants.py contains a GUI to allow directory selection.  Additionally, run_participants.py will require headerheader configuration for custom data. 
+These scripts will not work by default without configuration, as directories and models need to be specified for custom datasets. Only run_participants.py contains a GUI to allow directory selection.  Additionally, run_participants.py will require configuration for custom data. 
 
-Assessment_page includes the survey itself and scripting to transfer drawn responses. to a mysql database. 
+Assessment_page includes the survey itself and scripting to transfer drawn responses to a mysql database. 
 Retrieve_page includes a page to retrieve individual student responses for review or hand scoring. 
 
 create_models.py - Create a model for each question given a set of images and save files to .h5 and .json. 
