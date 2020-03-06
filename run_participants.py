@@ -182,7 +182,6 @@ def Start():
                     else: resp.append("N/A")
                     #print(row[drawn_images_list.index(x) + 2])
                 ##Q5
-                ##TODO: find locations of data in row
                 resp.append(row[23])
                 resp.append("A")
                 resp.append(("0", "1")[row[23] == "A"])
